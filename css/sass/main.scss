@@ -1,6 +1,10 @@
 // Type!
 @import url(“https://use.typekit.net/zhf6kaw.css”);
 
+// Media!
+$break-phone: 640px;
+$break-ipad: 1024px;
+
 // Rainbow and clipping!
 @mixin rainbow() {
   background: repeating-linear-gradient(-45deg,red 0%, yellow 7.14%, rgb(0,255,0) 14.28%, rgb(0,255,255) 21.42%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
@@ -33,21 +37,39 @@ body {
 
 h1 {
   color: black;
-  font-size: 4em;
-  margin: 30vh 0 0 0;
   padding: 0;
   line-height: 1em;
   font-weight: normal;
+  @media (min-width: $break-ipad) {
+    font-size: 4em;
+    margin: 30vh 0 0 0;
+  }
+  @media (min-width: $break-phone) {
+    font-size: 3em;
+    margin: 20vh 0 0 0;
+  }
+  @media (max-width: $break-phone) {
+    font-size: 2em;
+    margin: 20vh 0 3vh 0;
+  }
 }
 h2 {
   @include rainbow;
-  font-size: 10em;
   margin: 0 0 0 0;
   line-height: 1.15em;
   font-weight: bold;
+  @media (min-width: $break-ipad) {
+    font-size: 8em;
+  }
+  @media (min-width: $break-phone) {
+    font-size: 6em;
+  }
+  @media (max-width: $break-phone) {
+    font-size: 5em;
+  }
 }
 
-.button{
+.button {
   border-radius: 10px;
   border: none;
   width: 300px;
@@ -57,14 +79,36 @@ h2 {
   text-align: center;
   background-color: red;
   display:table;
-  margin: 20vh auto;
-  &:hover{
+  &:hover {
     @include rainbow;
     animation-duration: 3.5s;
   }
-  span{
+  &:focus {
+    outline: none;
+  }
+  span {
     color: white;
     text-align: center;
     font-weight: bold;
+  }
+  @media (min-width: $break-ipad) {
+    margin: 20vh auto;
+  }
+  @media (min-width: $break-phone) {
+    margin: 10vh auto;
+  }
+  @media (max-width: $break-phone) {
+    margin: 10vh auto;
+  }
+}
+
+#colophon {
+  color: #ccc;
+  @media (min-width: $break-phone) {
+    margin: 140px auto 0 auto;
+  }
+  @media (max-width: $break-phone) {
+    margin: 30px auto 0 auto;
+    width: 80vw;
   }
 }

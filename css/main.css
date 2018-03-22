@@ -20,20 +20,38 @@ body {
 
 h1 {
   color: black;
-  font-size: 4em;
-  margin: 30vh 0 0 0;
   padding: 0;
   line-height: 1em;
   font-weight: normal; }
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 4em;
+      margin: 30vh 0 0 0; } }
+  @media (min-width: 640px) {
+    h1 {
+      font-size: 3em;
+      margin: 20vh 0 0 0; } }
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 2em;
+      margin: 20vh 0 3vh 0; } }
 
 h2 {
   background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, lime 14.28%, cyan 21.42%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
   background-size: 600vw 600vw;
   -webkit-animation: 'slide' 10s infinite linear forwards;
-  font-size: 10em;
   margin: 0 0 0 0;
   line-height: 1.15em;
   font-weight: bold; }
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 8em; } }
+  @media (min-width: 640px) {
+    h2 {
+      font-size: 6em; } }
+  @media (max-width: 640px) {
+    h2 {
+      font-size: 5em; } }
 
 .button {
   border-radius: 10px;
@@ -44,16 +62,36 @@ h2 {
   vertical-align: center;
   text-align: center;
   background-color: red;
-  display: table;
-  margin: 20vh auto; }
+  display: table; }
   .button:hover {
     background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, lime 14.28%, cyan 21.42%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
     background-size: 600vw 600vw;
     -webkit-animation: 'slide' 10s infinite linear forwards;
     animation-duration: 3.5s; }
+  .button:focus {
+    outline: none; }
   .button span {
     color: white;
     text-align: center;
     font-weight: bold; }
+  @media (min-width: 1024px) {
+    .button {
+      margin: 20vh auto; } }
+  @media (min-width: 640px) {
+    .button {
+      margin: 10vh auto; } }
+  @media (max-width: 640px) {
+    .button {
+      margin: 10vh auto; } }
+
+#colophon {
+  color: #ccc; }
+  @media (min-width: 640px) {
+    #colophon {
+      margin: 140px auto 0 auto; } }
+  @media (max-width: 640px) {
+    #colophon {
+      margin: 30px auto 0 auto;
+      width: 80vw; } }
 
 /*# sourceMappingURL=main.css.map */
