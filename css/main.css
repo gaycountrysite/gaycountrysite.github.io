@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import url(“https://use.typekit.net/zhf6kaw.css”);
+@keyframes slide {
+  0% {
+    background-position-x: 0%; }
+  100% {
+    background-position-x: 600vw; } }
+.clip {
+  background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, lime 14.28%, cyan 21.42%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+  background-size: 600vw 600vw;
+  -webkit-animation: 'slide' 10s infinite linear forwards;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; }
+
+body {
+  font-family: 'filson-soft';
+  margin: 0;
+  overflow: hidden;
+  text-align: center; }
+
+h1 {
+  color: black;
+  font-size: 4em;
+  margin: 30vh 0 0 0;
+  padding: 0;
+  line-height: 1em;
+  font-weight: normal; }
+
+h2 {
+  background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, lime 14.28%, cyan 21.42%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+  background-size: 600vw 600vw;
+  -webkit-animation: 'slide' 10s infinite linear forwards;
+  font-size: 10em;
+  margin: 0 0 0 0;
+  line-height: 1.15em;
+  font-weight: bold; }
+
+.button {
+  border-radius: 10px;
+  border: none;
+  width: 300px;
+  height: 80px;
+  font-size: 1.5em;
+  vertical-align: center;
+  text-align: center;
+  background-color: red;
+  display: table;
+  margin: 20vh auto; }
+  .button:hover {
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, lime 14.28%, cyan 21.42%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+    background-size: 600vw 600vw;
+    -webkit-animation: 'slide' 10s infinite linear forwards;
+    animation-duration: 3.5s; }
+  .button span {
+    color: white;
+    text-align: center;
+    font-weight: bold; }
+
+/*# sourceMappingURL=main.css.map */
