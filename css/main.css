@@ -94,4 +94,31 @@ h2 {
       margin: 30px auto 0 auto;
       width: 80vw; } }
 
+#theparty {
+  width: 170px;
+  height: 147px;
+  background-image: url("http://images.vectorhq.com/images/previews/228/disco-ball-psd-448771.png");
+  background-size: cover;
+  position: fixed;
+  left: 50vw;
+  margin: 0 0 0 -90px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.party {
+  animation: party 2s cubic-bezier(0.445, 0.050, 0.550, 0.950) forwards;
+  -webkit-animation: party 2s cubic-bezier(0.445, 0.050, 0.550, 0.950) forwards;
+}
+
+@keyframes party {
+    0%   {opacity: 0; top: -200px;}
+    100% {opacity: 1; top: -10px;}
+}
+
+@-webkit-keyframes party {
+    0%   {opacity: 0; top: -200px;}
+    100% {opacity: 1; top: -10px;}
+}
+
 /*# sourceMappingURL=main.css.map */

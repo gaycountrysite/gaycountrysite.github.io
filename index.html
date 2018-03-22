@@ -19,7 +19,11 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="js/party.js"></script>
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -29,19 +33,21 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="theparty"></div>
   <div class="container">
     <div class="row">
       <div class="twelve columns">
         <h1>Welcome to the club, Steph.</h1>
         <h2 class="clip">The gay club.</h2>
 
-        <button class="button"><span>LIT</span></button>
+        <button class="button" onclick="ToggleParty()"><span>LIT</span></button>
       </div>
     </div>
   </div>
 
   <div id="colophon">This site's maintained by Rizzo lol #dab #blaze #gay #nice</div>
 
+<audio id="audio" src="music/celebrate2.mp3" ></audio>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
